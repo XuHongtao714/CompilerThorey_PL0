@@ -1,0 +1,18 @@
+VAR X,Y,Z;
+PROCEDURE GCD;
+VAR W, G;
+BEGIN
+  W := X;
+  G := Y;
+  WHILE W # G DO
+  BEGIN
+    IF W < G THEN G := G - W;
+    IF G < W THEN W := W - G
+  END;
+  Z := W
+END;
+BEGIN
+	READ(X,Y);
+	CALL GCD;
+	WRITE(Z);
+END.

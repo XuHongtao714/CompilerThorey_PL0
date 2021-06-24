@@ -1,0 +1,30 @@
+VAR K,ANS,X,I;
+
+PROCEDURE ISPRIME;
+VAR I,T;
+BEGIN
+	ANS := 1;
+	IF X = 1 THEN ANS := 0;
+	I := 2;
+	WHILE I < X DO BEGIN
+		T := X;
+		WHILE T >= I DO BEGIN 
+			T := T - I;
+		END;
+		IF T = 0 THEN BEGIN
+			ANS := 0;
+			I := X+1;
+		END;
+		I := I + 1
+	END;
+END;
+BEGIN
+	READ(K);
+	I := 2;
+	WHILE I <= K DO BEGIN
+		X := I;
+		CALL ISPRIME;
+		IF ANS = 1 THEN WRITE(I);
+		I := I + 1
+	END;
+END.

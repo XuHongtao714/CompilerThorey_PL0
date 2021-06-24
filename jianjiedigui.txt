@@ -1,0 +1,17 @@
+const a=10;
+var b,c,x,d;
+procedure p;
+	procedure q;
+	begin
+		read(x);
+		d:=x;
+		while x#0 do call p;
+	end;
+begin
+	write(d);
+	call q;
+end;
+begin
+call p;
+end
+.

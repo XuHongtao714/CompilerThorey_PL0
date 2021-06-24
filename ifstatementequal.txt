@@ -1,0 +1,10 @@
+VAR A,B,C;
+BEGIN
+READ(A,B,C);
+IF A>= B+C THEN WRITE(A);
+IF A<= B+C THEN WRITE(B);
+IF A # B+C THEN WRITE(C)
+
+
+END
+.

@@ -1,0 +1,54 @@
+var a,b,s,t,flag;
+procedure p1;
+	var i,tmp,tem,st;
+procedure p2;
+	var i;
+	begin
+		i:=2;
+		while i<st
+		do
+		begin
+			tmp:=st/i;
+			tem:=tmp*i;
+			if tem=st
+			then  flag:=0;
+			i:=i+1;
+		end;
+	end;	
+
+begin
+	while s<=t
+	do
+	begin
+		if s=1
+		then
+			flag:=0;
+	
+		if s=2
+		then
+			flag:=1;
+	
+		if s#1
+		then
+			if s#2
+			then
+				if flag=1
+				then
+					begin
+						st:=s;
+						call p2;
+					end;
+		if flag=1
+		then
+			write(s);
+		if flag=0
+		then
+			flag:=1;
+		s:=s+1;
+	end;
+end;
+begin
+	flag:=1;
+	read(s,t);
+	call p1;
+end.
